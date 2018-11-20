@@ -17,3 +17,9 @@ function rotLeft(a, d) {
     }
     return a;
 }
+
+////////// One line without loop
+function rotLeft(a, d) {
+    a = a.slice(d).concat(a.slice(0, d));
+    return a;
+}
